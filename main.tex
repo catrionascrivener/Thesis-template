@@ -1,0 +1,175 @@
+\documentclass[11pt,twoside]{report} % change the font size here
+\usepackage[a4paper,width=150mm,top=35mm,bottom=25mm,bindingoffset=6mm]{geometry} % Set the margins here
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {Images/} } % The path to your image folder
+\usepackage[left]{lineno}
+\usepackage[english]{babel}
+\usepackage[round]{natbib} % reference settings
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{lscape} % Allow landscape pages if necessary for tables
+\setlength{\parskip}{0.1em} % Define the paragraph spacing
+\onehalfspacing % Set the font spacing here
+%\fontfamily{ptm}\selectfont  % Set the font
+\bibliographystyle{newapa} % Reference style set to APA
+
+
+\begin{document}
+
+
+%____________________________________________________________________
+% Create title page
+
+\begin{figure}[t]
+\includegraphics[width=0.5\textwidth]{reading_logo.png} % change the image to suit you
+\centering
+\end{figure}
+
+\begin{titlepage}
+\begin{center}
+  \vspace*{1cm}
+ 
+   \Large
+   \textbf{Thesis Title}
+   
+   \vspace{1.5 cm}
+   \textbf{Name}
+   
+   \vspace{3 cm} % Changes the spacing between the text
+    %\vfill
+    A thesis presented for the degree of\\
+    PhD in Neuroscience
+  
+   \vspace{2 cm} % Changes the spacing between the text
+   \Large
+   School of Psychology and Clinical Language Science\\
+   University of Reading\\
+   May 2019
+\end{center}
+\end{titlepage}
+%____________________________________________________________________
+
+
+% ABSTRACT
+\newpage
+\thispagestyle{plain}
+\begin{center}
+    \Huge
+    \textbf{Abstract}
+    
+    \vspace{1cm}
+    \large
+    Abstract text 
+\end{center}
+ 
+ %____________________________________________________________________
+%DEDICATION 
+\newpage
+\thispagestyle{plain}
+\begin{center}
+    \Huge
+    \textbf{Dedication}  
+    
+    \vspace{1cm}
+    \Large
+    \textbf{Dedication}
+\end{center}
+ 
+ %____________________________________________________________________
+% DECLARATION
+\newpage
+\thispagestyle{plain}
+%\begin{center}
+    \Huge
+    \textbf{Declaration}
+    
+    \vspace{1cm}
+    \large
+   \noindent
+    I confirm that this is my own work and the use of all material from other sources has been properly and fully acknowledged.
+   
+   % Mention contributions for each paper. Estimate percentage
+   
+   
+   \vspace{1 cm}
+   \noindent
+   Name
+ 
+%\end{center}
+
+%____________________________________________________________________
+%Acknowledgements 
+\newpage
+\thispagestyle{plain}
+%\begin{center}
+    \Huge
+    \textbf{Acknowledgements}
+ 
+    \vspace{1cm}
+    \large
+    Text for acknowledgements
+%\end{center}
+%____________________________________________________________________
+\tableofcontents{}
+
+\listoffigures 
+\listoftables 
+%____________________________________________________________________
+
+% CHAPTER 1
+\chapter{Introduction}
+\input{Chapters/Chapter1.tex}
+
+%____________________________________________________________________
+\newpage
+If you want to write an interim summary/section between papers, write it here. Otherwise, delete this text and where we ask for a new page.
+
+% Chapter 2
+\chapter{Chapter 2 Title}
+\input{Chapters/Chapter2.tex}
+
+%____________________________________________________________________
+
+% Chapter 3
+\chapter{Chapter 3 Title}
+\input{Chapters/Chapter3.tex}
+
+%____________________________________________________________________
+
+
+% CHAPTER 4
+\chapter{Chapter 4 Title}
+\input{Chapters/Chapter4.tex}
+
+%____________________________________________________________________
+
+
+% CHAPTER 5
+\chapter{Chapter 5 title}
+\input{Chapters/Chapter5.tex}
+
+%____________________________________________________________________
+
+% CHAPTER 6
+\chapter{Chapter 6 title}
+\input{Chapters/Chapter6.tex}
+
+%____________________________________________________________________
+
+% CHAPTER 7
+\chapter{Chapter 7 title}
+\input{Chapters/Chapter7.tex}
+
+%____________________________________________________________________
+\appendix
+\chapter{Additional analysis}
+\input{Chapters/Appendix}
+
+
+%____________________________________________________________________
+% Bibliography
+\bibliography{BibliographyFileName} % Change this to the name of your bibliography file
+
+
+\end{document}
