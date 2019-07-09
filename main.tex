@@ -1,5 +1,5 @@
 \documentclass[11pt,oneside]{report} % change the font size here. Change to twoside for double sided text.
-\usepackage[a4paper,width=150mm,top=35mm,bottom=25mm,bindingoffset=6mm]{geometry} % Set the margins here
+\usepackage[a4paper,width=150mm,top=35mm,bottom=25mm,left=25mm,right=25mm,bindingoffset=10mm]{geometry} % Set the margins here. Currently the left margin is 25mm + a 10mm binding offset (text is moved over by 10mm to account for the binding).
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \graphicspath{ {Images/} } % The path to your image folder
@@ -43,12 +43,20 @@
   
    \vspace{2 cm} % Changes the spacing between the text
    \Large
-   School of Psychology and Clinical Language Science\\
-   University of Reading\\
-   May 2019
+   Department\\
+   University \\
+   Date
 \end{center}
 \end{titlepage}
 %____________________________________________________________________
+
+% This code adds an empty page after the title page, before the abstract. 
+% You can copy it anywhere that you would like an additional blank page.
+% The empty page is included in the page count, but does not have a number.
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
 
 
 % ABSTRACT
